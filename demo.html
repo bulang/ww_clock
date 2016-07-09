@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Keywords" content="倒计时">
+  <meta name="Description" content="倒计时">
+  <title>倒计时--旺旺</title>
+  <style>
+      .ww{height:50px;line-height: 50px;margin:0 auto;border-radius:5px;border:1px solid #999;text-align: center;margin-top: 20px;}
+      .ww span{display:inline-block;}
+  </style>
+ </head>
+ <body>
+ 
+	<div class="ww1 ww"></div>
+  <div class="ww2 ww"></div>
+  <div class="ww3 ww"></div>
+  <div class="ww4 ww"></div>
+
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/ww.min.jquery.js"></script>
+  <script type="text/javascript" >
+   //引入倒计时函数 第一个参数为时间戳，第二个参数为放倒计时的节点，第三个参数为展示样式；
+   ww_clock("1488899999",$('.ww1'),"ww_1");
+   ww_clock("1488822222",$('.ww2'),"ww_2");
+   ww_clock("1488833333",$('.ww3'),"ww_3");
+   ww_clock("1488844444",$('.ww4'),"ww_4");
+  
+  </script>
+ </body>
+</html>
